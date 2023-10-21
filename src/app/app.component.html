@@ -4,10 +4,10 @@
     <hr>
   </div>
   <div class="page_links">
-    <a href="#profile"><img src="assets/Pictures/Images/Avatar.png" alt="profileLogo" style="width: 35px; height: 35px;">Profile</a>
-    <a href="#projects"><img src="assets/Pictures/Images/Lightning.png" alt="projectsLogo" style="width: 35px; height: 35px;">Projects</a>
-    <a href="#contact"><img src="assets/Pictures/Images/SendPaper.png" alt="contactLogo" style="width: 35px; height: 35px;">Contact Me</a>
-    <a href="#notes"><img src="assets/Pictures/Images/Notes.png" alt="notesLogo" style="width: 35px; height: 35px;">Notes</a>
+    <a (click)="assingTargetPage($event)" href="#profile"><img src="assets/Pictures/Images/Avatar.png" alt="profileLogo" style="width: 35px; height: 35px;">Profile</a>
+    <a (click)="assingTargetPage($event)"  href="#projects"><img src="assets/Pictures/Images/Lightning.png" alt="projectsLogo" style="width: 35px; height: 35px;">Projects</a>
+    <a (click)="assingTargetPage($event)" href="#contactme"><img src="assets/Pictures/Images/SendPaper.png" alt="contactLogo" style="width: 35px; height: 35px;">Contact Me</a>
+    <a (click)="assingTargetPage($event)" href="#notes"><img src="assets/Pictures/Images/Notes.png" alt="notesLogo" style="width: 35px; height: 35px;">Notes</a>
   </div>
   <div class="rrssLinks">
     <a href="www.linkedin.com/in/danpier-dos-reis-4b597119a"><img src="assets/Pictures/icons/Linkedin.png" alt="Linkedin" style="width: 3.2rem; height: 3.2rem;"></a>
@@ -15,3 +15,4 @@
     <a href="https://github.com/Danpier-Dos-Reis"><img src="assets/Pictures/icons/github.png" alt="Github" style="width: 3.2rem; height: 3.2rem;"></a>
   </div>
 </section>
+<app-right-panel [endpoint]="targetEndPoint"></app-right-panel>

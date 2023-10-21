@@ -1,0 +1,7 @@
+<div id="right_Panel" [ngSwitch]="endpoint">
+    <app-profile *ngSwitchCase="profileSite"></app-profile>
+    <app-projects *ngSwitchCase="projectsSite"></app-projects>
+    <app-contact-me *ngSwitchCase="contactMe"></app-contact-me>
+    <app-notes *ngSwitchCase="notes"></app-notes>
+    <app-profile *ngSwitchDefault></app-profile>
+</div>
