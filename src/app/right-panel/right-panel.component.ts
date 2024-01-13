@@ -17,18 +17,18 @@ export class RightPanelComponent implements OnChanges, OnInit, DoCheck, OnDestro
   notes:string = Location.notes;
 
   ngOnChanges(changes: SimpleChanges): void {
-    console.log("rootOnChange");
+    console.log("leftOnChange");
   }
 
   ngOnInit(): void{
-    console.log("rootOnInit");
+    console.log("leftOnInit");
   }
 
   ngDoCheck(): void {
-    console.log("rootDoCheck");
+    console.log("leftDoCheck");
   }
 
   ngOnDestroy(): void {
-    console.log("rootOnDestroy");
+    console.log("leftOnDestroy");
   }
 }
